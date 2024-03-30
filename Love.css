@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    background-image: url('love.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    max-width: 400px; 
+    width: 90%; 
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.your-div, .partner-div {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+button {
+    border: none;
+    background-color: #ff69b4; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: #d450a5; 
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px; 
+    font-size: 24px; 
+    color: rgba(224, 12, 12, 0.712); 
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 300px; 
+        padding: 20px;
+    }
+}
